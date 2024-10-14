@@ -30,6 +30,7 @@ extension String {
             try formatter.format(
                 source: self,
                 assumingFileURL: nil,
+                selection: .infinite,
                 to: &formattedString
             ) { diagnostic, sourceLocation in
                 print(

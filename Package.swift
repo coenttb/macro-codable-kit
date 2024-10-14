@@ -7,7 +7,7 @@ import PackageDescription
 let package = Package(
     name: "macro-codable-kit",
     platforms: [
-        .macOS(.v10_15),
+        .macOS(.v12),
         .iOS(.v13),
     ],
     products: [
@@ -19,20 +19,20 @@ let package = Package(
     dependencies: [
         // Read Swift code
         .package(
-            url: "https://github.com/apple/swift-syntax.git",
-            from: "509.0.0"
+            url: "https://github.com/swiftlang/swift-syntax.git",
+            from: "600.0.0"
         ),
 
         // Format Swift code
         .package(
-            url: "https://github.com/apple/swift-format.git",
-            from: "509.0.0"
+            url: "https://github.com/swiftlang/swift-format.git",
+            from: "600.0.0"
         ),
 
         // Tools for macro development
         .package(
             url: "https://github.com/stackotter/swift-macro-toolkit",
-            from: "0.3.0"
+            branch: "main"
         ),
 
         // Tools for macro development
@@ -71,3 +71,8 @@ let package = Package(
         ),
     ]
 )
+
+
+/*
+ 
+ */
